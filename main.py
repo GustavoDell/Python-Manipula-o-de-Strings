@@ -8,9 +8,9 @@ print(subString)
 
 # argumento = "moedaorigem=real"
 
-# listaArgumento = argumento.split("=")
+# listaArgumento = argumento.split("=") #A função split transforma o conteudo da variavel em uma lista excluido oque foi passado como parametro
 # print(listaArgumento)
 
 url = "pagina?argumentos"
-indice = url.find("?")
+indice = url.find("?") # A função find() pega o indice o argumento que está sendo passado por parametro
 print(url[indice + 1:])
