@@ -17,12 +17,12 @@ from ExtratorArgumentosUrl import ExtratorArgumentosUrl
 # indice = url.find("?") # A função find() pega o indice o argumento que está sendo passado por parametro
 # print(url[indice + 1:])
 
-# url = "https://bytebank.com/cambio?moedaorigem=moedadestino&moedadestino=dolar"
+url = "https://bytebank.com/cambio?moedaoRigem=moedadestino&moedadestino=dolar&valor=1500"
 
-# argumentosUrl = ExtratorArgumentosUrl(url)
+argumentosUrl = ExtratorArgumentosUrl(url)
 
-# moedaOrigem, moedaDestino = argumentosUrl.extraiAgumentos()
-# print(moedaDestino, moedaOrigem)
+moedaOrigem, moedaDestino = argumentosUrl.extraiAgumentos()
+print(moedaDestino, moedaOrigem)
 
 # print(ExtratorArgumentosUrl.urlEhValida(url))
 
@@ -31,6 +31,11 @@ from ExtratorArgumentosUrl import ExtratorArgumentosUrl
 
 # print(substring)
 
-string = "bytebankbyte"
-stringNova = string.replace("byte", "gustavo",1) #replace procura a palavra informada e substitui por outra palavra que informada, mais a quantiade de substituições que se deseja fazer
-print(stringNova) 
+# string = "bytebankbyte"
+
+# print(stringNova)
+
+banco1 = "bytebank".upper()
+banco2 = "BYTEBANK".lower()
+
+# print(banco2)
