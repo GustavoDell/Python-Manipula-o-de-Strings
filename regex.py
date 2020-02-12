@@ -1,4 +1,4 @@
-#EXPRESSÕES REGULARES
+#EXPRESSÕES REGULARES (regex)
 import re #biblioteca que lida com expressões regulares no python
 
 email1 = "Meu numero é 1234-1234"

@@ -46,3 +46,10 @@ print(moedaDestino, moedaOrigem, valor)
 # url2 = "https://bitebank.com.br"
 # url3 = "https://bytebank.com/cambi o/teste/teste"
 # print(url3.startswith(urlByteBank))#startswith, verifica se a string começa com um caracter especifico
+string = "bytebank"
+print(argumentosUrl)
+
+argumentosUrl = ExtratorArgumentosUrl(url)
+argumentosUrl2 = ExtratorArgumentosUrl(url)
+
+print(argumentosUrl == argumentosUrl2)
