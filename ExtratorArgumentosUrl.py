@@ -21,7 +21,7 @@ class ExtratorArgumentosUrl():
         
 
         indiceInicialMoedaOrigem = self.encontraIndiceInicial(buscaMoedaOrigem)
-        indiceFinalMoedaOrigem = self.url.find("&")
+        indiceFinalMoedaOrigem = self.url.find("&") #find é utlizado para procurar se um determina trecho esta de dentro de algo
     
         moedaOrigem = self.url[indiceInicialMoedaOrigem:indiceFinalMoedaOrigem]
        
