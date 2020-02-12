@@ -22,7 +22,8 @@ url = "https://bytebank.com/cambio?moedaoRigem=moedadestino&moedadestino=dolar&v
 argumentosUrl = ExtratorArgumentosUrl(url)
 
 moedaOrigem, moedaDestino = argumentosUrl.extraiAgumentos()
-print(moedaDestino, moedaOrigem)
+valor = argumentosUrl.extraiValor()
+print(moedaDestino, moedaOrigem, valor)
 
 # print(ExtratorArgumentosUrl.urlEhValida(url))
 
@@ -35,7 +36,13 @@ print(moedaDestino, moedaOrigem)
 
 # print(stringNova)
 
-banco1 = "bytebank".upper()
-banco2 = "BYTEBANK".lower()
+# banco1 = "bytebank".upper()
+# banco2 = "BYTEBANK".lower()
 
 # print(banco2)
+
+# urlByteBank = "https://bytebank.com"
+# url1 = "https://buscasites.com/busca?q=https://bytebank.com"
+# url2 = "https://bitebank.com.br"
+# url3 = "https://bytebank.com/cambio/teste/teste"
+# print(url3.startswith(urlByteBank))#startswith, verifica se a string começa com um caracter especifico

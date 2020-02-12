@@ -9,7 +9,8 @@ class ExtratorArgumentosUrl():
 
     @staticmethod
     def urlEhValida(url):
-        if url:
+        urlByteBank = "https://bytebank.com"
+        if url and url.startswith(urlByteBank):#startswith, verifica se a string começa com um caracter especifico
             return True
         else:
             return False
@@ -31,8 +32,8 @@ class ExtratorArgumentosUrl():
             moedaOrigem = self.url[indiceInicialMoedaOrigem:indiceFinalMoedaOrigem]
         
         indiceInicialMoedaDestino = self.encontraIndiceInicial(buscaMoedaDestino)
-        indiceFinalMoedaDestino = self.en 
-        moedaDestino = self.url[indiceInicialMoedaDestino:]
+        indiceFinalMoedaDestino = self.url.find("&valor")
+        moedaDestino = self.url[indiceInicialMoedaDestino:indiceFinalMoedaDestino]
         
         return moedaOrigem, moedaDestino
 
@@ -45,6 +46,7 @@ class ExtratorArgumentosUrl():
 
     def extraiValor(self):
         buscaValor = "valor="
-
         indiceInicialValor = self.encontraIndiceInicial(buscaValor)
         valor = self.url[indiceInicialValor:]
+
+        return valor
